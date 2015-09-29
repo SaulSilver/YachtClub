@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<YachtClub>
+  <Boats>
+    <Boat id="adsas"   />
+    <Boat id="dasdasdas"/>
+
+  </Boats>
+  <Members>
+    <Member id="dasda" />
+
+
+  </Members>
+</YachtClub>
+
+
