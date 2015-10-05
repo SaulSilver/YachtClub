@@ -5,13 +5,14 @@ using System.Text;
 
 namespace YachtClub
 {
-    public class MemberRegister
+    public class MemberRegister 
     {
         private List<Member> allMembers;
-        private List<Boats> allBoath;
+        private List<Boats> allBoats;
 
-        public void addMember()
-        {
+        public void addMember(){
+
+            
             throw new System.NotImplementedException();
         }
 
