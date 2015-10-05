@@ -7,29 +7,19 @@ namespace YachtClub
 {
     public class Boat : FileInteraction
     {
-
-
-     
-
-
-        private double length;
-        
-
+        private double length;   
         public double Length { get { return length; }  set { length = value;  }  }
-
-
         public enum boat_Type { sailboat, motorsailer, kayak, other };
+        private boat_Type type;
 
-        private boat_Type _Difficulty;
-
-    public void SetType(boat_Type difficulty)
+    public void SetType(boat_Type boatType)
     {
-    _Difficulty = difficulty;
+    type = boatType;
     }
 
     public boat_Type GetType()
     {
-    return _Difficulty;
+    return type;
     }   
 
     }
