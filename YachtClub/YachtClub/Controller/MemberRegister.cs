@@ -11,28 +11,56 @@ namespace YachtClub
         private List<Boat> allBoats;
         private FileInteraction database;
 
-        public void addMember()
+        public void addMember(Member member)
         {
-            throw new System.NotImplementedException();
+            if (allMembers.Contains(member))
+            {
+                throw new ArgumentNullException();
+        }
+            else {allMembers.Add(member);}
+
+            
         }
 
-        public void addBoat()
+        public void addBoat(Boat boat)
         {
-            throw new System.NotImplementedException();
+            if (allBoath.Contains(boat))
+            {
+                throw new ArgumentNullException();
+        }
+            else { allBoath.Add(boat); }
+
         }
 
-        public void deleteMember()
+        public void deleteMember(Member mem)
         {
-            throw new System.NotImplementedException();
+            
+            if (allMembers.Contains(mem))
+        {
+                allMembers.Remove(mem);
+            }
+            else
+                throw new ArgumentNullException();
+            
+            
         }
 
-        public void deleteBoat()
+        public void deleteBoat(Boat boat)
         {
-            throw new System.NotImplementedException();
+            
+            if (allBoath.Contains(boat))
+        {
+                allBoath.Remove(boat);
+            }
+            else
+                throw new ArgumentNullException();
+
+            
         }
 
-        public void updateMember()
+        public void updateMember(Member member)
         {
+            
             throw new System.NotImplementedException();
         }
 
@@ -55,10 +83,10 @@ namespace YachtClub
                 allMembers.Find(x => x.personal_number());
             }
             else
-            {
+        {
                 throw new Exception("Member does not exist.");
             }
-                throw new System.NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }

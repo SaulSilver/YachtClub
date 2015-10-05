@@ -5,23 +5,32 @@ using System.Text;
 
 namespace YachtClub
 {
-    public class Boat
+    public class Boat : FileInteraction
     {
+
+
+     
+
+
         private double length;
-        private string type;
+        
 
-        public enum Difficulty { Easy, Normal, Hard };
+        public double Length { get { return length; }  set { length = value;  }  }
 
-        private Difficulty _Difficulty;
 
-        public void SetDifficulty(Difficulty difficulty)
-        {
-            _Difficulty = difficulty;
-        }
+        public enum boat_Type { sailboat, motorsailer, kayak, other };
 
-        public Difficulty GetDifficulty()
-        {
-            return _Difficulty;
-        }
+        private boat_Type _Difficulty;
+
+    public void SetType(boat_Type difficulty)
+    {
+    _Difficulty = difficulty;
+    }
+
+    public boat_Type GetType()
+    {
+    return _Difficulty;
+    }   
+
     }
 }
