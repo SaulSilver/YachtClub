@@ -5,44 +5,86 @@ using System.Text;
 
 namespace YachtClub
 {
-    public class MemberRegister 
+    public class MemberRegister
     {
         private List<Member> allMembers;
-        private List<Boats> allBoats;
+        private List<Boat> allBoats;
+        private FileInteraction database;
 
-        public void addMember(){
+        public void addMember(Member member)
+        {
+            if (allMembers.Contains(member))
+            {
+                throw new ArgumentNullException();
+        }
+            else {allMembers.Add(member);}
 
             
+        }
+
+        public void addBoat(Boat boat)
+        {
+            if (allBoath.Contains(boat))
+            {
+                throw new ArgumentNullException();
+        }
+            else { allBoath.Add(boat); }
+
+        }
+
+        public void deleteMember(Member mem)
+        {
+            
+            if (allMembers.Contains(mem))
+        {
+                allMembers.Remove(mem);
+            }
+            else
+                throw new ArgumentNullException();
+            
+            
+        }
+
+        public void deleteBoat(Boat boat)
+        {
+            
+            if (allBoath.Contains(boat))
+        {
+                allBoath.Remove(boat);
+            }
+            else
+                throw new ArgumentNullException();
+
             throw new System.NotImplementedException();
         }
 
-        public void addBoat()
+        public void updateMember(Member member)
         {
             throw new System.NotImplementedException();
         }
 
-        public void deleteMember()
+        public void updateBoat(Member member, Boat boat)
         {
+            if (allMembers.Contains(member))
+            {
+                if (allBoats.Contains(boat))
+                {
+                    boat.
+                }
+            }
             throw new System.NotImplementedException();
         }
 
-        public void deleteBoat()
+        public void getBoatsFromMember(Member member)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void updateMember()
+            if (allMembers.Contains(member))
+            {
+                allMembers.Find(x => x.personal_number());
+            }
+            else
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void updateBoat()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void getBoatsFromMember()
-        {
+                throw new Exception("Member does not exist.");
+            }
             throw new System.NotImplementedException();
         }
     }
