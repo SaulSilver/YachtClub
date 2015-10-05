@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="YachtClub.Member">
+    <Position X="3.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\Member.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.Boat">
+    <Position X="3.25" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Boat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.FileInteraction">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAQQAEAAAAAAAAAAAAAAIGAAA=</HashCode>
+      <FileName>Model\FileInteraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.MemberRegister">
+    <Position X="7" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAQAAAAAAAQAAAAABAAAAAACAAAgIAAAAAQCAAAA=</HashCode>
+      <FileName>Controller\MemberRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.MainGUI">
+    <Position X="11.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MainGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
