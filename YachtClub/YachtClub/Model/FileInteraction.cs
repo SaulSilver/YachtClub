@@ -2,16 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace YachtClub
 {
     public class FileInteraction
     {
-        private String guid;
+
+        XmlTextReader reader;
+        String path = "Storage.xml";
+        private Guid guid;
+
+        public Guid myGuid { get { return guid; } set { guid = value; } }
 
         public Object get()
         {
-            throw new System.NotImplementedException();
+          XElement root = XElement.Load("Storage.xml");
+          IEnumerable<XElement>  =
+                from el in root.Elements("Members")
+                where (string)el.Attribute("guid") == "guid"
+                select el;
+           
         }
 
         public List<Object> getAll()
@@ -19,10 +31,7 @@ namespace YachtClub
             throw new System.NotImplementedException();
         }
 
-        public void add()
-        {
-            throw new System.NotImplementedException();
-        }
+        public virtual void add(){}
 
         public void update()
         {

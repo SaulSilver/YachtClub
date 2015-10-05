@@ -55,7 +55,7 @@ namespace YachtClub
             else
                 throw new ArgumentNullException();
 
-            
+            throw new System.NotImplementedException();
         }
 
         public void updateMember()
