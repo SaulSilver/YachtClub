@@ -32,5 +32,5 @@ namespace YachtClub
     return _Difficulty;
     }   
 
-}
+    }
 }
