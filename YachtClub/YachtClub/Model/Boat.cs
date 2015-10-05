@@ -9,5 +9,19 @@ namespace YachtClub
     {
         private double length;
         private string type;
+
+        public enum Difficulty { Easy, Normal, Hard };
+
+        private Difficulty _Difficulty;
+
+        public void SetDifficulty(Difficulty difficulty)
+        {
+            _Difficulty = difficulty;
+        }
+
+        public Difficulty GetDifficulty()
+        {
+            return _Difficulty;
+        }
     }
 }

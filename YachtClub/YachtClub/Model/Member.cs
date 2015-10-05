@@ -7,9 +7,13 @@ namespace YachtClub
 {
     public class Member
     {
-        private string last_Name;
-        private string first_Name;
-        private int personal_Number;
+        private string lastName;
+        private string firstName;
+        private int personalNumber;
+        private int memberId;
         private List<Boat> boats;
     }
+
+   
 }
+

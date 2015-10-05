@@ -8,7 +8,8 @@ namespace YachtClub
     public class MemberRegister
     {
         private List<Member> allMembers;
-        private List<Boats> allBoath;
+        private List<Boat> allBoats;
+        private FileInteraction database;
 
         public void addMember()
         {
@@ -35,14 +36,29 @@ namespace YachtClub
             throw new System.NotImplementedException();
         }
 
-        public void updateBoat()
+        public void updateBoat(Member member, Boat boat)
         {
+            if (allMembers.Contains(member))
+            {
+                if (allBoats.Contains(boat))
+                {
+                    boat.
+                }
+            }
             throw new System.NotImplementedException();
         }
 
-        public void getBoatsFromMember()
+        public void getBoatsFromMember(Member member)
         {
-            throw new System.NotImplementedException();
+            if (allMembers.Contains(member))
+            {
+                allMembers.Find(x => x.personal_number());
+            }
+            else
+            {
+                throw new Exception("Member does not exist.");
+            }
+                throw new System.NotImplementedException();
         }
     }
 }
