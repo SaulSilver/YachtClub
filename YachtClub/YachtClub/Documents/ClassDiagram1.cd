@@ -3,7 +3,7 @@
   <Class Name="YachtClub.Member">
     <Position X="3" Y="0.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAAAAABAAAEAAAAAAAAAAAAAAACQAA=</HashCode>
+      <HashCode>AAAAAAABAAAAAQAAAAQDAAgEAAAAAAAAAAAAAACCQAA=</HashCode>
       <FileName>Model\Member.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -17,7 +17,7 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAABAAAAAAAFQAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAABAAAABAAEQAAAAAAAAAAA=</HashCode>
       <FileName>Model\Boat.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -28,18 +28,18 @@
       <FileName>Model\FileInteraction.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="YachtClub.MemberRegister">
-    <Position X="6.25" Y="2" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>CAAAAQAAAAAAAQAAAAABAAAAAAiAAAgIAAAAAACAAAA=</HashCode>
-      <FileName>Controller\MemberRegister.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="YachtClub.MainGUI">
     <Position X="11.25" Y="2.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MainGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.MemberRegister">
+    <Position X="6.25" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAQAAAAAAAQBAAAABAAAAAAiAAAgIAAAAAACAAAA=</HashCode>
+      <FileName>Controller\MemberRegister.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
