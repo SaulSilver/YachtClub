@@ -7,5 +7,6 @@ namespace YachtClub
 {
     public class MainGUI
     {
+
     }
 }

@@ -13,9 +13,9 @@ namespace YachtClub
 
         public void addMember(Member member)
         {
-            if (allMembers.Contains(member))
+            if (allMembers.Contains(member))    
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Member not found");
         }
             else {allMembers.Add(member);}
 
@@ -26,7 +26,7 @@ namespace YachtClub
         {
             if (allBoath.Contains(boat))
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Boat not found");
         }
             else { allBoath.Add(boat); }
 
@@ -40,7 +40,7 @@ namespace YachtClub
                 allMembers.Remove(mem);
             }
             else
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Member not found");
             
             
         }
@@ -53,14 +53,20 @@ namespace YachtClub
                 allBoath.Remove(boat);
             }
             else
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Boat not found");
 
-            throw new System.NotImplementedException();
+          
         }
 
         public void updateMember(Member member)
         {
-            throw new System.NotImplementedException();
+            //Need to delete member and create new one in XML file
+
+            member.last_name 
+            member.member_id 
+            member.personal_number 
+            member.first_name  
+            
         }
 
         public void updateBoat(Member member, Boat boat)
@@ -72,7 +78,7 @@ namespace YachtClub
                     boat.
                 }
             }
-            throw new System.NotImplementedException();
+            
         }
 
         public void getBoatsFromMember(Member member)
@@ -85,7 +91,7 @@ namespace YachtClub
         {
                 throw new Exception("Member does not exist.");
             }
-            throw new System.NotImplementedException();
+            
         }
     }
 }

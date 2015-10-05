@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="button" Content="New Member" HorizontalAlignment="Left" Margin="30,124,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="30,27,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="30,55,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="30,78,0,0" TextWrapping="Wrap" Text="Personal Number" VerticalAlignment="Top" Width="120" TextChanged="textBox2_TextChanged"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="164" Margin="408,57,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="listView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="label" Content="Members" HorizontalAlignment="Left" Margin="199,9,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Boats" HorizontalAlignment="Left" Margin="441,13,0,0" VerticalAlignment="Top"/>
+        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="166" Margin="179,55,0,0" VerticalAlignment="Top" Width="100">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="button1" Content="Add Boat" HorizontalAlignment="Left" Margin="309,183,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="296,57,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="comboBox_SelectionChanged"/>
+        <Button x:Name="button2" Content="Compact List" HorizontalAlignment="Left" Margin="30,183,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Verbose List" HorizontalAlignment="Left" Margin="30,207,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
