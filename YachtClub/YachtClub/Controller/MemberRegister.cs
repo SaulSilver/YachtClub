@@ -15,7 +15,7 @@ namespace YachtClub
         {
             if (allMembers.Contains(member))
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Member already exists.");
         }
             else {allMembers.Add(member);}
 
@@ -26,7 +26,7 @@ namespace YachtClub
         {
             if (allBoats.Contains(boat))
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Boat already exists.");
         }
             else { allBoats.Add(boat); }
 
@@ -40,7 +40,7 @@ namespace YachtClub
                 allMembers.Remove(mem);
             }
             else
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Member does not exist.");
             
             
         }
@@ -53,14 +53,24 @@ namespace YachtClub
                 allBoats.Remove(boat);
             }
             else
-                throw new ArgumentNullException();
-
-            throw new System.NotImplementedException();
+                throw new ArgumentNullException("Boat does not exist.");
         }
 
-        public void updateMember()
+        public void updateMember(Member member)
         {
-            throw new System.NotImplementedException();
+            if (allMembers.Contains(member))
+            {
+                Member toBeupdatedMember = new Member();
+                toBeupdatedMember.last_name = member.last_name;
+                toBeupdatedMember.first_name = member.first_name;
+                toBeupdatedMember.personal_number = member.personal_number;
+                toBeupdatedMember.member_id = member.member_id;
+                toBeupdatedMember.boats = member.boats;
+            }
+            else
+            {
+                throw new Exception("Member does not exist.");
+            }
         }
 
         public void updateBoat(Member member, Boat boat)
