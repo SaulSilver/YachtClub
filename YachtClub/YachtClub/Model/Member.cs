@@ -39,8 +39,7 @@ namespace YachtClub
                 xBoats.AppendChild(xNewBoat);
             }
             doc.AppendChild(id);
-        }      
-        
+        }
     }
 
    

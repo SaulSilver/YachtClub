@@ -16,33 +16,45 @@ namespace YachtClub
 
         public Guid myGuid { get { return guid; } set { guid = value; } }
 
-        public Object get()
-        {
-            return null;
+        public virtual Object get(){
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Storage.xml");
+
+            XmlElement xmlElement = doc.GetElementById(guid.ToString());
+            return xmlElement;
         }
 
-        public List<Object> getAll()
-        {
+        public List<Object> getAll(){
             throw new System.NotImplementedException();
         }
 
         public virtual void add(){}
 
         public virtual void add(Guid memberID) { }
-
-        public void update()
-        {
-            throw new System.NotImplementedException();
+        
+        public void delete(){
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Storage.xml");
+            XmlElement xmlElement = doc.GetElementById(guid.ToString());            
         }
 
-        public void delete()
-        {
-            throw new System.NotImplementedException();
+        public void clear(){
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Storage.xml");
+            XmlNode rootNode = doc.FirstChild;
+            rootNode.RemoveAll();
         }
 
-        public void clear()
-        {
-            throw new System.NotImplementedException();
+        public Boolean lookup(){
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Storage.xml");
+
+            if(doc.GetElementById(guid.ToString()) == null){
+                return false;
+            }
+            else{
+                return true;
+            }
         }
     }
 }
