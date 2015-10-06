@@ -18,12 +18,7 @@ namespace YachtClub
 
         public Object get()
         {
-          XElement root = XElement.Load("Storage.xml");
-          IEnumerable<XElement>  =
-                from el in root.Elements("Members")
-                where (string)el.Attribute("guid") == "guid"
-                select el;
-           
+            return null;
         }
 
         public List<Object> getAll()
@@ -32,6 +27,8 @@ namespace YachtClub
         }
 
         public virtual void add(){}
+
+        public virtual void add(Guid memberID) { }
 
         public void update()
         {

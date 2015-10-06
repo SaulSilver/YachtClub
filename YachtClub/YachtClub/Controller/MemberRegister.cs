@@ -66,6 +66,8 @@ namespace YachtClub
                 toBeupdatedMember.personal_number = member.personal_number;
                 toBeupdatedMember.member_id = member.member_id;
                 toBeupdatedMember.boats = member.boats;
+                member.delete();
+                toBeupdatedMember.add();
             }
             else
             {
@@ -82,6 +84,8 @@ namespace YachtClub
                     Boat newBoat = new Boat();
                     newBoat.SetType(boat.GetType());
                     newBoat.Length = boat.Length;
+                    boat.delete();
+                    newBoat.add();
                 }
                 else 
                 {

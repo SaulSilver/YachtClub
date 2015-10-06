@@ -24,5 +24,30 @@ namespace YachtClub
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
