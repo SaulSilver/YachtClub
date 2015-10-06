@@ -22,7 +22,6 @@ namespace YachtClub.Controller
             mbRegister.addMember(member1);
             mbRegister.getBoatsFromMember(member1);
 
-
         }
     }
 }

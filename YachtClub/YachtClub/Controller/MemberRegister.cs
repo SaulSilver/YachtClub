@@ -11,11 +11,11 @@ namespace YachtClub
         private List<Boat> allBoats;
         private FileInteraction database;
 
-        public void addMember(Member member)
+        public void addMember(Member member) 
         {
             if (allMembers.Contains(member))
             {
-                throw new ArgumentNullException("Member already exists.");
+                throw new Exception("Member already exists.");
         }
             else {allMembers.Add(member);}
 
@@ -26,7 +26,7 @@ namespace YachtClub
         {
             if (allBoats.Contains(boat))
             {
-                throw new ArgumentNullException("Boat already exists.");
+                throw new Exception("Boat already exists.");
         }
             else { allBoats.Add(boat); }
 
@@ -40,7 +40,7 @@ namespace YachtClub
                 allMembers.Remove(mem);
             }
             else
-                throw new ArgumentNullException("Member does not exist.");
+                throw new Exception("Member does not exist.");
             
             
         }
@@ -53,7 +53,7 @@ namespace YachtClub
                 allBoats.Remove(boat);
             }
             else
-                throw new ArgumentNullException("Boat does not exist.");
+                throw new Exception("Boat does not exist.");
         }
 
         public void updateMember(Member member)
