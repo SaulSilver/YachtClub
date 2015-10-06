@@ -7,7 +7,7 @@ using System.Xml;
 namespace YachtClub
 {
     public class Member : FileInteraction
-    {        
+    {
         private string last_Name;
         private string first_Name;
         private int personal_Number;
@@ -42,6 +42,6 @@ namespace YachtClub
         }
     }
 
-   
+}
 }
 
