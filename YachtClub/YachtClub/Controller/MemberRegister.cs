@@ -13,6 +13,8 @@ namespace YachtClub
 
         public void addMember(Member member) 
         {
+            database = new FileInteraction();
+            if(database.lookup())
             if (allMembers.Contains(member))
             {
                 throw new Exception("Member already exists.");
